@@ -17,7 +17,8 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.0"
-        app:srcCompat="@drawable/desiredleaguebg" />
+        app:srcCompat="@drawable/desiredleaguebg"
+        android:contentDescription="@string/background_image" />
 
     <ImageView
         android:id="@+id/imageView2"
@@ -28,14 +29,16 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@+id/imageView"
-        app:srcCompat="@drawable/swooshlogo" />
+        app:srcCompat="@drawable/swooshlogo"
+        android:contentDescription="@string/logo"
+        tools:ignore="UnknownIdInLayout" />
 
     <TextView
         android:id="@+id/textView3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="24dp"
-        android:text="Desired League"
+        android:text="@string/desired_league"
         android:textColor="@android:color/background_light"
         android:textSize="18sp"
         app:layout_constraintEnd_toEndOf="parent"
@@ -60,10 +63,10 @@
             android:layout_marginTop="20dp"
             android:layout_marginRight="20dp"
             android:background="@drawable/swoosh_toggle"
-            android:text="Mens"
+            android:text="@string/mens"
             android:textColor="@android:color/white"
-            android:textOff="Mens"
-            android:textOn="Mens"
+            android:textOff="@string/mens"
+            android:textOn="@string/mens"
             android:textSize="18sp"
             android:textStyle="bold" />
 
@@ -75,10 +78,10 @@
             android:layout_marginLeft="20dp"
             android:layout_marginRight="20dp"
             android:background="@drawable/swoosh_toggle"
-            android:text="Womens"
+            android:text="@string/womens"
             android:textColor="@android:color/white"
-            android:textOff="Womens"
-            android:textOn="Womens"
+            android:textOff="@string/womens"
+            android:textOn="@string/womens"
             android:textSize="18sp"
             android:textStyle="bold" />
 
@@ -90,10 +93,10 @@
             android:layout_marginRight="20dp"
             android:layout_marginBottom="20dp"
             android:background="@drawable/swoosh_toggle"
-            android:text="Co-eds"
+            android:text="@string/co_eds"
             android:textColor="@android:color/white"
-            android:textOff="Co-eds"
-            android:textOn="Co-eds"
+            android:textOff="@string/co_eds"
+            android:textOn="@string/co_eds"
             android:textSize="18sp"
             android:textStyle="bold" />
     </LinearLayout>
@@ -106,7 +109,7 @@
         android:layout_marginRight="20dp"
         android:layout_marginBottom="8dp"
         android:background="@drawable/swoosh_button"
-        android:text="Next"
+        android:text="@string/next"
         android:textColor="@android:color/white"
         android:textSize="18sp"
         android:textStyle="bold"
