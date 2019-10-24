@@ -56,13 +56,14 @@
         app:layout_constraintTop_toBottomOf="@+id/textView3">
 
         <ToggleButton
-            android:id="@+id/toggleButton5"
+            android:id="@+id/mensBtn"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginLeft="20dp"
             android:layout_marginTop="20dp"
             android:layout_marginRight="20dp"
             android:background="@drawable/swoosh_toggle"
+            android:onClick="onMensClicked"
             android:text="@string/mens"
             android:textColor="@android:color/white"
             android:textOff="@string/mens"
@@ -71,13 +72,14 @@
             android:textStyle="bold" />
 
         <ToggleButton
-            android:id="@+id/toggleButton6"
+            android:id="@+id/womensBtn"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_margin="20dp"
             android:layout_marginLeft="20dp"
             android:layout_marginRight="20dp"
             android:background="@drawable/swoosh_toggle"
+            android:onClick="onWomensClicked"
             android:text="@string/womens"
             android:textColor="@android:color/white"
             android:textOff="@string/womens"
@@ -86,13 +88,14 @@
             android:textStyle="bold" />
 
         <ToggleButton
-            android:id="@+id/toggleButton7"
+            android:id="@+id/coedBtn"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginLeft="20dp"
             android:layout_marginRight="20dp"
             android:layout_marginBottom="20dp"
             android:background="@drawable/swoosh_toggle"
+            android:onClick="onCoedClicked"
             android:text="@string/co_eds"
             android:textColor="@android:color/white"
             android:textOff="@string/co_eds"
@@ -102,7 +105,7 @@
     </LinearLayout>
 
     <Button
-        android:id="@+id/button3"
+        android:id="@+id/nextBtn"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginLeft="20dp"
